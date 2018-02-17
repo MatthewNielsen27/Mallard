@@ -6,7 +6,7 @@ Designed as a lightweight solution to promote test-driven development, Mallard i
 
 ## The rational
 
-> Test-driven development guides your work towards an end goal while ensuring all previously achieved goals are still met
+> Test-driven development guides your work towards an end goal while ensuring all previously achieved goals are still met.
 
 ### Features
 
@@ -18,7 +18,7 @@ Designed as a lightweight solution to promote test-driven development, Mallard i
 
 ### Usage
 
-In this document, any`duck.function();` represents a call made by a `Duck` object
+In this document, any`duck.function();` represents a call made by a `Duck` object.
 
 #### Setup
 
@@ -73,6 +73,6 @@ All of which are properties of every `Duck` instance.
 When creating a `Duck` object, you must specify its name, but you can also include a specific file that it supervises. For example:
 `Duck bob("bob", "matrix.cpp");`
 
-If you enable version control `bob.version_control = true;` the duck will keep track of the best performing version of the file it was assigned, `"matrix.cpp"`. The best performing version will be stored as `mallard_notes/bob_pick.cpp`
+If you enable version control `bob.version_control = true;` the duck will keep track of the best performing version of the file it was assigned, `"matrix.cpp"`. The best performing version will be stored as `mallard_notes/bob_pick.cpp`.
 
 At any point, you can rollback the file to its best performing version through `./mallard rollback <duckname> <filename>`. In this case it would be `./mallard rollback bob matrix.cpp`. The file `"matrix.cpp"` will be updated to its best performing version.
