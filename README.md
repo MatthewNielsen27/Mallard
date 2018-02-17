@@ -18,7 +18,7 @@ Designed as a lightweight solution to promote test-driven development, Mallard i
 
 ### Usage
 
-In this document, any`duck.function()` represents a call made by a `Duck` object
+In this document, any`duck.function();` represents a call made by a `Duck` object
 
 #### Setup
 
@@ -42,19 +42,19 @@ Tests are initiated by the `watch` function, they can be used to test for:
 * Boolean return status
 * Integer return status
 
-sample usage: `duck.watch(authenticate(user, password), "valid", "Test for successful login", __LINE__);`
+sample usage: `duck.watch("valid", authenticate(user, password), "Test for successful login", __LINE__);`
 
 #### Running tests
 
 By using the command `./mallard run` you can run all the tests stated within the `mallard_testing/tests.cpp` file. Any logs will be generated inside the `mallard_testing/mallard_notes` folder.
 
-Adding a `duck.status()` breakpoint inside your code will output the status of that corresponding duck's tests so far.
+Adding a `duck.status();` breakpoint inside your code will output the status of that corresponding duck's tests so far.
 
 Sample tests:
 
 ![Missing: Image of mallard status log](docs/images/tests.png)
 
-Status:
+Status with runtime log before it:
 
 ![Missing: Image of mallard status log](docs/images/status.png)
 
@@ -70,8 +70,9 @@ All of which are properties of every `Duck` instance.
 
 #### Version control
 
-When creating a `Duck` object, you must specify its name, but you can also include a specific file that it supervises. For example: `Duck bob("bob", "matrix.cpp");`
+When creating a `Duck` object, you must specify its name, but you can also include a specific file that it supervises. For example:
+`Duck bob("bob", "matrix.cpp");`
 
 If you enable version control `bob.version_control = true;` the duck will keep track of the best performing version of the file it was assigned, `"matrix.cpp"`. The best performing version will be stored as `mallard_notes/bob_pick.cpp`
 
-At any point, you can rollback the file to its best performing version through `./mallard rollback -duckname- -filename-`. In this case it would be `./mallard rollback bob matrix.cpp`. The file `"matrix.cpp"` will be updated to its best performing version.
+At any point, you can rollback the file to its best performing version through `./mallard rollback <duckname> <filename>`. In this case it would be `./mallard rollback bob matrix.cpp`. The file `"matrix.cpp"` will be updated to its best performing version.
