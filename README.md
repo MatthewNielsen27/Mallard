@@ -12,7 +12,7 @@ Designed as a lightweight solution to promote test-driven development, Mallard i
 
 * Tell Mallard to watch your code at certain points to ensure your code works as expected!
 * If specified, Mallard can provide runtime error reporting for your code and provides a detailed summary of your tests after your code's execution.
-* Once your program has executed, Mallard will provide a customizable log file summarizing your the test's entire run.
+* Once your program has executed, Mallard will provide a customizable log file summarizing the test's entire run.
 * Mallard can be set up to track the best performing version of your code. You can rollback your code to the best performing version at any time!
 * Mallard can also generate a time-series log file so you can track your code's performance over time
 
