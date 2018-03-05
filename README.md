@@ -52,7 +52,11 @@ Adding a `duck.status()` breakpoint inside your code will output the status of t
 
 Sample tests:
 
-![Missing: Image of mallard status log](docs/images/tests.png)
+![Missing: Image of mallard tests](docs/images/tests.png)
+
+Results:
+
+![Missing: Image of mallard result log](docs/images/results.png)
 
 Status:
 
