@@ -30,7 +30,7 @@ Just make sure to include a copy of `duck.hpp` and `duck.cpp` inside the `mallar
 
 Also be sure to include the names of your source files within the `SRC` variable of the `makefile` located in `mallard_testing`.
 
-![Missing: Image of mallard makefile](docs/images/makefile.png)
+![Missing: Image of mallard makefile](docs/images/make.png)
 
 #### Writing tests
 
@@ -75,3 +75,7 @@ When creating a `Duck` object, you must specify its name, but you can also inclu
 If you enable version control `bob.version_control = true;` the duck will keep track of the best performing version of the file it was assigned, `"matrix.cpp"`. The best performing version will be stored as `mallard_notes/bob_pick.cpp`
 
 At any point, you can rollback the file to its best performing version through `./mallard rollback -duckname- -filename-`. In this case it would be `./mallard rollback bob matrix.cpp`. The file `"matrix.cpp"` will be updated to its best performing version.
+
+#### License
+
+[See LICENSE](docs/LICENSE.md)
