@@ -28,7 +28,7 @@ By typing`./mallard init`, you can create a mallard project inside of an existin
 
 Just make sure to include a copy of `duck.hpp` and `duck.cpp` inside the `include` and `src` directories respectively.
 
-Also be sure to include the names of your source files within the `SRC` variable of the `makefile` located in `mallard_testing`.
+Also be sure to include the names of your source files within the `SRC` variable of the `makefile` located in `tests`.
 
 ![Missing: Image of mallard makefile](docs/images/make.png)
 
@@ -46,7 +46,7 @@ sample usage: `duck.watch(authenticate(user, password), "valid", "Test for succe
 
 #### Running tests
 
-By using the command `./mallard run` you can run all the tests stated within the `mallard_testing/tests.cpp` file. Any logs will be generated inside the `mallard_testing/mallard_notes` folder.
+By using the command `./mallard run` you can run all the tests stated within the `tests/tests.cpp` file. Any logs will be generated inside the `tests/notes` folder.
 
 Adding a `duck.status()` breakpoint inside your code will output the status of that corresponding duck's tests so far.
 
@@ -72,7 +72,7 @@ All of which are properties of every `Duck` instance.
 
 When creating a `Duck` object, you must specify its name, but you can also include a specific file that it supervises. For example: `Duck bob("bob", "matrix.cpp");`
 
-If you enable version control `bob.version_control = true;` the duck will keep track of the best performing version of the file it was assigned, `"matrix.cpp"`. The best performing version will be stored as `mallard_notes/bob_pick.cpp`
+If you enable version control `bob.version_control = true;` the duck will keep track of the best performing version of the file it was assigned, `"matrix.cpp"`. The best performing version will be stored as `tests/notes/bob_pick.cpp`
 
 At any point, you can rollback the file to its best performing version through `./mallard rollback -duckname- -filename-`. In this case it would be `./mallard rollback bob matrix.cpp`. The file `"matrix.cpp"` will be updated to its best performing version.
 
