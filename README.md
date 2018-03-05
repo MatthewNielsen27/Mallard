@@ -26,7 +26,7 @@ By typing`./mallard init`, you can create a mallard project inside of an existin
 
 ![Missing: Image of mallard project structure](docs/images/structure.png)
 
-Just make sure to include a copy of `duck.hpp` and `duck.cpp` inside the `mallard_testing/include` and `mallard_testing/src` folders respectively.
+Just make sure to include a copy of `duck.hpp` and `duck.cpp` inside the `include` and `src` directories respectively.
 
 Also be sure to include the names of your source files within the `SRC` variable of the `makefile` located in `mallard_testing`.
 
