@@ -33,7 +33,6 @@ duck.watch(1, 2, "integer equality", __LINE__);
 duck.watch(1.5, 1.5, 0.01, "float value within threshold", __LINE__);
 duck.watch(1.5, 1.49, 0.001, "float value within threshold", __LINE__);
 
-
 //Show the status of tests
 duck.status();
 
